@@ -1,0 +1,331 @@
+
+html {
+  overflow-x: hidden;
+  background-color: #E8F5E9;
+}
+
+body{
+  font-family: roboto;
+  margin: 0px;
+  background-color: #E8F5E9;
+}
+
+/* Nav bar styles */
+.navbar{
+  background-color: #263238;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 6000;
+}
+
+.navbar a {
+    float: left;
+    color: #ECEFF1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: roboto;
+    font-size: 17px;
+}
+
+.navbar a:hover{
+  background-color: #43A047;
+}
+
+.navbar a.active{
+  background-color: #37474F;
+}
+
+p {
+  font-size: 17px;
+}
+
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* index main image style */
+#top_row {
+  height: auto;
+  max-height: 100vh;
+  width: 100%;
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+#bgimg {
+  position: relative;
+  top: 28px;
+  left: 0;
+  width: 100%;
+
+}
+
+#top_row #logoimg {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 150px;
+  height: 100px;
+}
+
+#top_row h1  {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50px;
+  font-size: 36px;
+  font-style: normal;
+  color: #ECEFF1;
+}
+
+/* Responsive Styling */
+@media (min-width: 640px)
+{
+  #top_row h2  {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30%;
+    font-size: 10vw;
+    font-style: normal;
+    font-family: 'Qwigley', cursive;
+    font-weight: 200;
+    color: #00a665;
+  }
+}
+
+#top_row h2  {
+  text-align: center;
+  font-weight: 200;
+}
+
+#aboutRow {
+  margin-top: 50px;
+}
+
+#rowImg{
+  float: left;
+}
+
+#rowText{
+  width: 300px;
+  float: left;
+}
+
+#rowText h2{
+  margin: 0px;
+}
+
+/* Logo/image row styling */
+#aboutRow h2{
+  font-size: 120px;
+  font-size: normal;
+  font-family: 'Qwigley', cursive;
+  font-weight: 200;
+  color: #00a665;
+}
+
+#aboutRow #logoimg {
+  width: 150px;
+  height: 100px;
+}
+
+#about_image {
+  float: left;
+}
+
+#about_h2 {
+  float: right;
+}
+
+#description {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#container-graph {
+	min-width: 310px;
+	max-width: 80%;
+	height: 400px;
+	margin: 0 auto;
+}
+
+/* button styling */
+button {
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  border: 2px solid #4CAF50;
+  width: 80px;
+  height:25px;
+  background-color: Transparent;
+  font-family: Roboto;
+  font-size: 14px;
+
+}
+
+#form{
+  width: 80%;
+  margin-left: 10%;
+}
+
+button:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+/* Social buttons bar styling */
+#socialbar{
+  padding: 20px;
+}
+
+#socialbar h3{
+  padding-left: 5px;
+}
+
+#socialbar img {
+  width: 50px;
+  height: 50px;
+}
+
+#huffpost{
+
+  width: 150px;
+  height: 150px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#gmap{
+  width: 600px;
+  height: 450px;
+  border: 0;
+  frameborder: 0;
+}
+
+/* Footer styling */
+footer{
+  padding-left: 20px;
+}
+
+footer a{
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  border: 2px solid #4CAF50;
+  width: 80px;
+  height:25px;
+  padding: 10px;
+  background-color: Transparent;
+  font-family: Roboto;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover{
+  background: #4CAF50;
+  color: white;
+}
+
+a:hover{
+  color: white;
+}
+
+/* Table on about page styling */
+#aboutTable {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  table-align: center;
+}
+
+#aboutimg{
+  width: 400px;
+  height: 300px;
+}
+
+/* Jquery tabs styling */
+.ui-tabs .ui-tabs-nav {
+  background: #E8F5E9;
+  text-align: center;
+  margin: 0;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  float: none !important;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid #4CAF50;
+}
+
+#tabs{
+  margin-top: 130px;
+}
+
+#tabs .ui-state-active{
+  background: #4CAF50;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 2px solid #4CAF50;
+
+}
+
+#tabP{
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #337ab7;
+}
+
+#tabs a:hover{
+  text-decoration: none;
+  color: orange;
+
+}
+
+#aboutTable ul{
+  width: 80%;
+  text-align: left;
+  margin-left: 10%
+}
+
+/* Ordered list styling */
+ol{
+  margin-top: 40px;
+}
+
+#image{
+  width: 300px;
+  height: 200px;
+}
+#colimg1{
+  width: 246px;
+  height: 160px;
+}

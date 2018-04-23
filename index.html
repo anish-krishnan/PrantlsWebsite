@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ruthie" rel="stylesheet">
+    <title>Prantl's Bakery</title>
+  </head>
+
+  <meta charset="utf-8" />
+  <meta name="author" content="Anish Krishnan">
+  <meta name="keywords" content="Carnegie Mellon University, Student, resume">
+  <meta name="description" content="Anish Krishnan Professional Website">
+
+  <link rel="stylesheet" media="all" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="boot/bootstrap.css">
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+
+  <!-- THIS PAGE IS RESPONSIVE -->
+
+  <body>
+    <div id="container">
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="order.html">Order</a>
+        <a href="about.html">About</a>
+        <a href="citations.html">Citations</a>
+      </div>
+      <br>
+
+      <!-- High-def Image with logo/text in home page -->
+      <div id="top_row">
+        <header>
+          <img id="bgimg" src="images/cookie.jpg" alt="logo">
+          <p>.</p>
+          <h2>Prantl's Bakery</h2>
+        </header>
+        <img id="logoimg" src="images/logo.png" alt="logo">
+      </div>
+
+
+      <div id="bio">
+        <!-- Features intro text and youtube video -->
+        <div class="row">
+          <div class="col-md-5">
+            <p>Prantl’s Bakery is a Pittsburgh institution. Its “Burnt Almond Torte” and 100+ sinful sweets have been a tradition for the last 40 years. In fact, there’s been a bakery in continuous operation at the flagship Shadyside store for over 100 years. Prantl’s is a bakery in the German tradition, with old-fashioned fruit Danish and nut-filled coffeecakes, but we can’t help but get excited about some of our “new favorites” as well, like key lime pie and our buttery croissants.
+            </p>
+          </div>
+          <div class="col-md-7">
+            <iframe width="384" height="216" src="https://www.youtube.com/embed/iLhlZciMfoQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        <!-- Features more intro text with images of desserts -->
+        <div class="row">
+          <div class="col-md-7">
+          <img id="image" src="images/almond.jpg" alt="logo" >
+          <img id="image" src="images/food2.jpg" alt="logo" >
+          </div>
+          <div class="col-md-5">
+            <p>In addition to our mouth watering special order cakes, we are famous for our “Burnt Almond Torte”, which was conceived by Henry Prantl after a trip to California. There was an almond glut the year he went and the Almond Board was trying to get bakers to use almonds in new and inspiring ways. Henry picked up a few ideas and brought them back to Pittsburgh where he refined them into our current recipe for “Burnt Almond Torte”, a unique and addictive dessert.
+            </p>
+          </div>
+        </div>
+
+        <!-- HOVER over wedding/holday/celebration to see details -->
+        <!-- Spoke with Prof Q that hovering on mobile devices does not work but its okay even though
+        this page is responsive -->
+        <div class="row">
+          <div onmouseover="showDescription('WEDDINGS');" onmouseout="hideDescription();" class="col-md-4">
+            <a href="index.html" ><img id="colimg1" src="images/wedding.jpg" alt="logo" ></a>
+          </div>
+          <div onmouseover="showDescription('HOLIDAYS');" onmouseout="hideDescription();" class="col-md-4">
+            <a href="index.html"><img id="colimg1" src="images/holiday.jpg" alt="logo"></a>
+          </div>
+          <div onmouseover="showDescription('CELEBRATIONS');" onmouseout="hideDescription();" class="col-md-4">
+            <a href="index.html"><img id="colimg1" src="images/celebration.jpg" alt="logo"></a>
+          </div>
+        </div>
+        <div id="description"></div>
+
+        <!-- External Links -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Read about people's experiences!</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="https://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html">
+                <img id="huffpost" src="images/huffpost.png">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh">
+                <img id="huffpost" src="images/yelp.png">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.tripadvisor.com/Restaurant_Review-g53449-d822736-Reviews-Prantl_s_Bakery-Pittsburgh_Pennsylvania.html">
+                <img id="huffpost" src="images/trip.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Buttons Bar and Footer -->
+    <div id="socialbar">
+      <h3>Social Media</h3>
+      <a href="mailto:infoneeded@prantlsbakery.com"><img src="images/gmail.png"></a>
+      <a href="http://www.facebook.com/PrantlsBakery/"><img src="images/fb.png"></a>
+      <a href="http://www.instagram.com/prantlsbakery/"><img src="images/ig.png"></a>
+    </div>
+
+    <hr/>
+    <footer>
+      <p>&copy;Prantl's Bakery 2018</p><br/>
+      <a href="index.html">Home</a>
+      <a href="order.html">Order</a>
+      <a href="about.html">About</a>
+    </footer>
+    <br>
+    </div>
+  </body>
+</html>

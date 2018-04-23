@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ruthie" rel="stylesheet">
+    <title>Prantl's Bakery</title>
+  </head>
+
+  <meta charset="utf-8" />
+  <meta name="author" content="Anish Krishnan">
+  <meta name="keywords" content="Carnegie Mellon University, Student, resume">
+  <meta name="description" content="Anish Krishnan Professional Website">
+
+
+  <!-- <link rel="stylesheet" type="text/css" href="boot/bootstrap.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" media="all" type="text/css" href="css/style.css">
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+
+  <script>
+    $(function() {
+      $("#tabs").tabs({
+        event: "mouseover"
+      });
+    });
+  </script>
+
+  <body>
+    <div id="container" class="container">
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" href="order.html">Order</a>
+        <a href="about.html">About</a>
+        <a href="citations.html">Citations</a>
+      </div>
+
+      <!-- Logo and Page Title -->
+      <div class="row">
+        <div class="col-md-12" id="aboutRow">
+              <div id="rowImg"><img id="logoimg" src="images/logo.png" alt="logo"></div>
+              <div id="rowText"><h2>Order</h2></div>
+        </div>
+      </div>
+
+
+      <!-- jquery TABS to choose between shipping and in-store pickup -->
+      <div class="row">
+        <div class="col-md-12">
+          <div id="tabs">
+            <ul>
+              <li> <a href="#tabs-1">Shipping</a> </li>
+              <li> <a href="#tabs-2">In-Store Pickup</a> </li>
+            </ul>
+            <div id="tabs-1">
+              <p id="tabP"><a id="tabA" href="https://www.goldbely.com/prantls-bakery">Click here to ship on of our famous burnt almond tortes anywhere in the country!</a></p>
+            </div>
+            <div id="tabs-2">
+              <p id="tabP">Use the form below to order a Burnt Almond Torte Cake for In-Store pickup!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Form -->
+      <div class="row">
+        <div class="col-md-12">
+          <div id="form">
+            <form onsubmit="return validate()" action="mailto:info@prantlsbakery.com" method="post" enctype="text/plain">
+              <fieldset>
+                <legend>Personal Information</legend>
+                Name<br>
+                <input id="formName" type="text" name="name" value="Your Name" size="20" maxlength="250"><br><br>
+                Please provide your billing address.<br>
+                <input name="name" value="5000 Forbes Ave, Pittsburgh, PA"><br><br>
+                Please provide your email address.<br>
+                <input type="email" name="name" value="abc@defg.com" required><br><br>
+                Please provide your phone number (No dashes/spaces ex. 4081234567)<br>
+                <input id="phone" type="text" name="name" value="" required><br><br>
+              </fieldset>
+              <fieldset>
+                <legend>Order Information</legend>
+                Pickup Location<br>
+                <select>
+                  <option value="Shadyside">Shadyside</option>
+                  <option value="Downtown">Downtown</option>
+                </select><br><br>
+                Order Quantity<br>
+                <select>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
+                  <option value="">8</option>
+                  <option value="">9</option>
+                  <option value="">10</option>
+                </select><br><br>
+                Pickup Date<br>
+                <input id="DOB" type="text" name="lastname" value="mm/dd/yyyy" required><br><br>
+                Pickup Time<br>
+                <input id="DOB" type="text" name="lastname" value="01:00 PM" required><br>
+                <br>
+                <button type="submit">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social buttons bar and footer -->
+    <div id="socialbar">
+      <h3>Social Media</h3>
+      <a href="mailto:infoneeded@prantlsbakery.com"><img src="images/gmail.png"></a>
+      <a href="http://www.facebook.com/PrantlsBakery/"><img src="images/fb.png"></a>
+      <a href="http://www.instagram.com/prantlsbakery/"><img src="images/ig.png"></a>
+    </div>
+
+    <hr/>
+    <footer>
+      <p>&copy;Prantl's Bakery 2018</p><br/>
+      <a href="index.html">Home</a>
+      <a href="order.html">Order</a>
+      <a href="about.html">About</a>
+    </footer>
+    <br>
+    </div>
+  </body>
+</html>
